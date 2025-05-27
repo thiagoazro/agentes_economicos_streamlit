@@ -72,7 +72,7 @@ for ativo in top_10_acoes:
     except Exception as e:
         print(f"❌ Erro com {ativo}: {e}")
 if not df_total.empty:
-    df_total.to_csv("../data/top_10_acoes.csv", index=True, encoding="utf-8-sig")
+    df_total.to_csv("data/top_10_acoes.csv", index=True, encoding="utf-8-sig")
     print(f"📁 Arquivo final salvo com {len(df_total)} linhas.")
 else:
     print("ℹ️ Nenhum dado foi coletado para salvar no arquivo CSV.")

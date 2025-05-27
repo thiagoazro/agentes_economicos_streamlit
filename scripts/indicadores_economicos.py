@@ -41,5 +41,5 @@ def coletar_indicadores_bacen(indicadores: dict, n_ultimos: int = 20) -> pd.Data
 
 # Coletar e salvar
 df_indicadores = coletar_indicadores_bacen(indicadores)
-df_indicadores.to_csv("../data/indicadores_economicos.csv", index=False, encoding="utf-8-sig")
+df_indicadores.to_csv("data/indicadores_economicos.csv", index=False, encoding="utf-8-sig")
 print("✅ Arquivo 'indicadores_economicos.csv' salvo com sucesso.")
